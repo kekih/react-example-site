@@ -1,0 +1,50 @@
+.footer {
+  background: var(--secondary);
+  color: #94a3b8;
+  padding: 3.5rem 0 2rem;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+.brand p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links a {
+  color: #94a3b8;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.copy {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  border-top: 1px solid #334155;
+  padding-top: 1.5rem;
+  width: 100%;
+}

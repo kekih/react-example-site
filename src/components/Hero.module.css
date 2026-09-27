@@ -1,0 +1,102 @@
+.hero {
+  padding: 6rem 0 5rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+.content h1 span {
+  color: var(--primary);
+}
+
+.content p {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.cardHeader {
+  background: #1e293b;
+  padding: 0.75rem 1rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.cardHeader span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #64748b;
+}
+
+.cardHeader span:nth-child(1) { background: #ef4444; }
+.cardHeader span:nth-child(2) { background: #eab308; }
+.cardHeader span:nth-child(3) { background: #22c55e; }
+
+.cardBody {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.codeLine {
+  height: 12px;
+  background: linear-gradient(90deg, #e2e8f0, #f1f5f9);
+  border-radius: 4px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
